@@ -1,0 +1,40 @@
+@use "../utils/fonts.scss" as *;
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 5rem 10rem;
+  text-wrap: wrap;
+}
+.hero_left {
+  color: var(--secondary_color);
+  font-family: $font-family-primary;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.name {
+  font-size: 36px;
+}
+.slogan {
+  font-size: 64px;
+  font-family: $font-family-secondary;
+}
+.hero_right {
+  width: 50%;
+}
+.anim {
+  width: 90%;
+  height: 90%;
+}
+.SocialMediaIcons_group {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}

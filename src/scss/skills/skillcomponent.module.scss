@@ -1,0 +1,28 @@
+@use "../utils/colors" as *;
+@use "../utils/theme" as *;
+@use "../utils/fonts.scss" as *;
+
+.cointainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin: 40px 20px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: $primary_color_dark;
+  border-radius: 100px;
+}
+
+.text {
+  font-size: 16px;
+  color: $primary_color_dark;
+  font-family: $font-family-secondary;
+}

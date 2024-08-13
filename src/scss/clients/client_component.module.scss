@@ -1,0 +1,33 @@
+@use "../utils/colors" as *;
+@use "../utils/theme" as *;
+@use "../utils/fonts.scss" as *;
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: $primary_color_light;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19),
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 150px;
+    margin: 10px 20px;
+}
+
+.logo {
+    object-fit: fill;
+    width: 120px;
+}
+
+.text {
+    color: $primary_color_dark;
+    font-family: $font-family-primary;
+    text-align: center;
+}

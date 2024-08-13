@@ -1,0 +1,92 @@
+@use "../utils/colors" as *;
+@use "../utils/theme" as *;
+@use "../utils/fonts.scss" as *;
+
+
+.container {
+    background-color: $primary_color_light ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19),
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    margin: 30px 10%;
+
+
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    padding: 30px;
+}
+
+.image {
+    width: 40%;
+    object-fit: cover;
+}
+
+.image img {
+    width: 100%;
+    object-fit: fill;
+    align-items: center;
+}
+
+.title,
+.subtitle,
+.content {
+    font-family: $font-family-primary;
+    font-size: 20px;
+    color: $primary_color_dark;
+    text-align: center;
+    width: 100%;
+}
+
+.subtitle {
+    font-size: 16px;
+}
+
+.content {
+    font-size: 12px;
+}
+
+.overlay {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background-color: $hover_color;
+    height: 100%;
+    position: absolute;
+    transition: width 2s ease;
+    border-radius: 10px;
+}
+
+.container:hover .overlay {
+    width: 100%;
+}
+
+.hovertext {
+    color: $primary_color_light;
+    text-align: start;
+    white-space: wrap;
+    font-size: 14px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 0;
+    transition: width 2s ease;
+    // transition-delay: 2s;
+}
+
+.container:hover .hovertext {
+    width: 100%;
+}

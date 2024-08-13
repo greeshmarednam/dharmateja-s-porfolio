@@ -1,0 +1,100 @@
+@use "../utils/colors" as *;
+@use "../utils/theme" as *;
+@use "../utils/fonts.scss" as *;
+
+.anim {
+    width: 80%;
+    height: 80%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $primary_color_light;
+    padding: 0 100px;
+        height: 80vh;
+    padding-bottom: 3%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: $primary_color_dark;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: $text_color_light;
+    width: 100%;
+    height: 2rem;
+}
+
+.title {
+    font-size: 36px;
+    font-family: $font-family-primary;
+    text-align: start;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    width: 60%;
+}
+
+::placeholder {
+    color: $text_color_light;
+    opacity: 1;
+    font-size: 16px;
+    font-family: $font-family-primary;
+
+}
+
+::-ms-input-placeholder {
+
+    color: $text_color_light;
+}
+
+.contac_mail {
+    font-family: $font-family-primary;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 60px;
+}
+
+.socialmedia_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

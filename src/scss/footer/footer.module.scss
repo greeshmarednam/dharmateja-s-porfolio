@@ -1,0 +1,27 @@
+@use "../utils/colors" as *;
+@use "../utils/theme" as *;
+@use "../utils/fonts.scss" as *;
+
+.footer {
+  display: flex;
+  background-color: $hover_color;
+  color: $primary_color_dark;
+  font-family: $font-family-primary;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}

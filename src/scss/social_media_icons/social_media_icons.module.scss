@@ -1,0 +1,41 @@
+@use "../utils/colors" as *;
+@use "../utils/theme" as *;
+@use "../utils/fonts.scss" as *;
+
+%icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover_color;
+    color: $white;
+  }
+}
+
+.dark_icon {
+  @extend %icons;
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+}
+
+.light_icon {
+  @extend %icons;
+  background-color: var(--secondary_color);
+  color: var(--primary_color);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+}
+
+.tooltip {
+  background-color: $hover_color;
+  font-family: $font-family-secondary;
+}

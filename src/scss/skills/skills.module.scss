@@ -1,0 +1,24 @@
+@use "../utils/colors" as *;
+@use "../utils/theme" as *;
+@use "../utils/fonts.scss" as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $primary_color_light;
+  overflow-x: hidden;
+  height: 150px;
+  padding: 50px 0px;
+  padding-left: 50px;
+  overflow: hidden;
+  gap: 20px;
+}
+.title {
+  font-size: 36px;
+  font-family: $font-family-primary;
+  text-align: center;
+}
+.slider {
+  height: 100%;
+}

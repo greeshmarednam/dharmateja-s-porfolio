@@ -1,0 +1,24 @@
+@use "./utils//theme" as *;
+@use "./utils//colors" as *;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--textcolor);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: $hover_color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary_color);
+  border-radius: 10px;
+}

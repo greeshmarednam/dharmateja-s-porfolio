@@ -1,0 +1,17 @@
+@use "../utils/colors" as *;
+@use "../utils/theme" as *;
+@use "../utils/fonts.scss" as *;
+
+.main {
+    // width: 100vw;
+    // height: 30vh;
+    padding: 30px 50px;
+    // padding-bottom: 10px;
+}
+
+.title {
+    font-size: 36px;
+    font-family: $font-family-primary;
+    text-align: center;
+    padding-bottom: 20px;
+}
