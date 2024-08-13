@@ -4,4 +4,4 @@ Dharma Teja N's portifolio
 
 # you can check it at dharmatejan.in
 
-# dharmatejan.in
+# https://dharmatejan.in
